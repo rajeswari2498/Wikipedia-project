@@ -1,0 +1,22 @@
+{% extends "encyclopedia/layout.html" %}
+
+{% block title %}
+    Edit {{title}}
+{% endblock %}
+
+{% block body%}
+
+<h2> Welcome to edit page :</h2>
+<h2 style = "color: blanchedalmond;">{{message}}</h2>
+<form action = "{% url 'encyclopedia:edit' %}" method="POST">
+    {% csrf_token %}
+    <h2>{{form.title.label}}</h2>
+    {{form.title}}
+    <br><br>
+    <h2>{{form.content.label}}</h2>
+    {{form.content}}
+    <br><br>
+
+    <input type="submit" value ="Edit">
+</form>
+{% endblock %}
