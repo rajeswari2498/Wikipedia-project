@@ -4,11 +4,13 @@
 {% endblock %}
 
 {% block body %}
-    <h1>WIKI</h1>
-    <ul>
-        {% for entry in entries %}
-        <li><a href="{% url 'encyclopedia:g_content' entry %}">{{ entry }}</a></li>            
-    {% endfor %} 
-    </ul>
+    <h1 style="text-align:center">WIKI</h1>
+    <div class="card mb-3" style="width: 20rem; ;" >
+        <ul style="font-family:'Times New Roman', Times, serif;font-size: large; ">
+            {% for entry in entries %}
+            <li><a href="{% url 'encyclopedia:g_content' entry %}">{{ entry }}</a></li>            
+        {% endfor %} 
+        </ul>
+    </div>
 
 {% endblock %}

@@ -7,7 +7,7 @@
 {% block body%}
 
 <h2> Welcome to edit page :</h2>
-<h2 style = "color: blanchedalmond;">{{message}}</h2>
+<h2 style = "color: rgb(223, 205, 255);">{{message}}</h2>
 <form action = "{% url 'encyclopedia:edit' %}" method="POST">
     {% csrf_token %}
     <h2>{{form.title.label}}</h2>

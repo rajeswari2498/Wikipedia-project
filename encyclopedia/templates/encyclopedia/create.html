@@ -7,7 +7,7 @@
 {% block body %}
     
 <h2>Welcome to post creator:</h2>
-    <h2 style="color: blue;">{{message}}</h2>
+    <h2 style="color: rgb(51, 0, 255);">{{message}}</h2>
     <form action="{% url 'encyclopedia:create'  %}" method="POST">
         {% csrf_token %}
         <h2>{{form.title.label}}</h2>

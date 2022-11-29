@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    background-color: pink;
+    background-color: white;
 }
 
 code {
@@ -23,16 +23,23 @@ textarea {
 
 .search {
     width: 100%;
-    font-size: 15px;
+    font-size: 25px;
     line-height: 15px;
 }
 
 .sidebar {
-    background-color: pink;
-    height: 95vh;
+    background-color: violet;
+    height: 120vh;
     padding: 20px;
 }
 
 .sidebar h2 {
     margin-top: 5px;
+}
+
+.card {
+    margin: 0 auto; /* Added */
+    float: none; /* Added */
+    margin-bottom: 10px; /* Added */
+    margin-top: 30px;
 }

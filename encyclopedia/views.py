@@ -44,7 +44,7 @@ def search(request):
             return g_content(request,search1)
         else:
             for i in util.list_entries():
-                if search.lower() == i[:len(search1)].lower():
+                if search1.lower() == i[:len(search1)].lower():
                     list1.append(i)
 
     return render(request, "encyclopedia/search.html",{
